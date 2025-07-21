@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation bar styling*/
+#nav{
+    display: flex;
+    width: 100%;
+}
+#nav h1{
+    margin: 1.5% 2%;
+    font-family: 'Brush Script MT' cursive;
+}
+#holder{
+    display: flex;
+    margin-left: 55%;
+    margin-top: 2%;
+}
+#holder a{
+    font-size: 20px;
+    margin: 0% 10%;
+    text-decoration: none;
+    color: lightblue;
+}
+#holder a:hover{
+    text-decoration: underline;
+}
+#menu{
+    display: none;
+}
+#hamburg{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /*General nav for both Laptop and phone*/
+    #nav{
+        box-shadow: 0 2Px grey;
+        display: block;
+        height: 8vh;
+    }
+
+    /*Removing Laptop nav view*/
+    #nav h1{
+        display: none;
+    }
+    #holder{
+        display: none;
+    }
+
+    /*Styling mobile nav view*/
+    #hamburg{
+        display: block;
+        width: 12%;
+        height: 10vh;
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+    #line{
+        height: 2vh;
+        width: 80%;
+        background: black;
+        border-radius: 12%;
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+
+    /*Navigation bar which only activates when hamburg is clicked*/
+    #menu{
+        height: 88vh;
+        width: 100%;
+    }
+    #cancel{
+        font-size: 40px;
+        margin-left: 2%;
+        margin-top: 3%;
+    }
+    #menu a{
+        font-size: 30px;
+        text-decoration: none;
+        text-align: center;
+        margin: 0% 25%;
+        color: lightblue;
+    }
+}

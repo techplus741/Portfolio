@@ -58,12 +58,12 @@ body {
   text-align: center;
   padding: 20px;
   line-height: 1.6;
-  animation: fadeSlide 4s ease-in-out;
 }
 
 #container1 h1 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  animation: fadeSlide 1s ease-in-out;
 }
 
 #container1 h2 {
@@ -71,6 +71,7 @@ body {
   margin-bottom: 10px;
   font-weight: normal;
   color: #444;
+  animation: fadeSlide 3s ease-in-out;
 }
 
 /* Animation */
@@ -245,5 +246,6 @@ body {
     font-size: 25px;
     color: white;
     margin-top: 5%;
+  animation: fadeSlide 4s ease-in-out;
   }
 }

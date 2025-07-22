@@ -54,11 +54,11 @@ body {
 #about{
   display: none;
 }
-#container{
+#container1{
   display: none;
 }
 
-/* Mobile responsiveness */
+/* Mobile responsiveness for the navigation bar, hamburger menu, and also the About me heading*/
 @media only screen and (max-width: 768px) {
   #nav {
     display: block;
@@ -127,7 +127,7 @@ body {
 }
 
 
-
+/*Continuation of the fitting of navigation bar and hamburger menu*/
 @media only screen and (max-width: 768px) {
   body {
     font-size: 16px;
@@ -192,13 +192,14 @@ body {
   }
 }
 
+/*Fitting the container that holds the image and litle speech about myself*/
 @media only screen and (max-width: 768px) {
-  #container{
+  #container1{
     display: block;
     margin-top: 3%;
     width: 100%;
   }
-  #container img{
+  #container1 img{
     height: 60vh;
     width: 90vw;
     border-radius: 5%;
@@ -234,26 +235,54 @@ body {
       transform: translateX(0);
     }
   }
-  #container h2{
+  #container1 h2{
     margin-top: 5%;
     padding: 20px;
     animation: fadeSlide 4s ease-in-out;
     font-size: 30px;
   }
-  #container h2 span{
+  #container1 h2 span{
     color: #00aaff;
   }
-  #container hr{
+  #container1 hr{
     margin-bottom: 10%;
     background: grey;
     width: 90%;
     margin-left: 5%;
     border-radius: 20%;
+    animation: fadeSlide 4s ease-in-out;
   }
   #heading{
     color: #00aaff;
     text-align: center;
     font-size: 50px;
     font-family: sans-serif;
+    margin-bottom: 20%;
+    animation: fadeSlide 4s ease-in-out;
+  }
+  #focused{
+    display: block;
+    animation: fadeSlide 4s ease-in-out;
+    width: 100%;
+  }
+  #focused li{
+    font-size: 35px;
+    margin: 5% 0%;
+    padding: 10px;
+    border-radius: 3%;
+  }
+  #quote{
+    display: flex;
+    height: 15vh;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 1%;
+    margin-bottom: 10%;
+  }
+  #quote hr{
+    height: 10vh;
+    width: 1%;
+    background: blue;
+    margin-top: 6%;
   }
 }

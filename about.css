@@ -23,7 +23,7 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-#nav h1 {
+#nav #head {
   font-family: 'Brush Script MT', cursive;
   font-size: 2rem;
   flex: 1;
@@ -203,5 +203,57 @@ body {
     width: 90vw;
     border-radius: 5%;
     margin-left: 5%;
+    animation: ani 3s ease-in-out infinite;
+  }
+  @keyframes ani {
+    0%{
+      scale: 1;
+    }
+    50%{
+      scale: 1.03;
+    }
+    100%{
+      scale: 1;
+    }
+  }
+  @keyframes fadeSlide {
+    0%{
+      opacity: 0;
+      transform: translateY(70px);
+    }
+    50%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+    70%{
+      opacity: 5;
+      transform: translateY(0);
+    }
+    100%{
+      opacity: 9;
+      transform: translateX(0);
+    }
+  }
+  #container h2{
+    margin-top: 5%;
+    padding: 20px;
+    animation: fadeSlide 4s ease-in-out;
+    font-size: 30px;
+  }
+  #container h2 span{
+    color: #00aaff;
+  }
+  #container hr{
+    margin-bottom: 10%;
+    background: grey;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 20%;
+  }
+  #heading{
+    color: #00aaff;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
   }
 }

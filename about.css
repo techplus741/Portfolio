@@ -1,92 +1,207 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*Navigation bar styling*/
-#nav{
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #fdfdfd;
+  color: #222;
+}
+
+/* Navigation styling */
+#nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 2%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#nav h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+  flex: 1;
+}
+
+#holder {
+  display: flex;
+  gap: 2rem;
+}
+
+#holder a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #00aaff;
+}
+
+#holder a:hover {
+  text-decoration: underline;
+}
+
+#menu {
+  display: none;
+}
+
+#hamburg {
+  display: none;
+}
+#about{
+  display: none;
+}
+#container{
+  display: none;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  #nav {
+    display: block;
+    height: auto;
+  }
+
+  #nav h1 {
+    display: none;
+  }
+
+  #holder {
+    display: none;
+  }
+
+  #hamburg {
+    display: block;
+    width: 12%;
+    height: 8vh;
+    margin-left: 3%;
+    margin-top: 3%;
+  }
+  #about{
     display: flex;
+    margin-top: 5%;
+    color: #00aaff;
+    text-align: center;
+    font-family: 'Brush Script MT', 'Times New Roman', Times, serif;  
+    font-size: 50px;
+    margin-left: 40%;
+  }
+  #line {
+    height: 4px;
+    width: 80%;
+    background: black;
+    border-radius: 12%;
+    margin: 6px auto;
+  }
+
+  #menu {
+    display: none;
+    height: 88vh;
     width: 100%;
-}
-#nav h1{
-    margin: 1.5% 2%;
-    font-family: 'Brush Script MT' cursive;
-}
-#holder{
-    display: flex;
-    margin-left: 55%;
-    margin-top: 2%;
-}
-#holder a{
-    font-size: 20px;
-    margin: 0% 10%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 20px;
+  }
+
+  #cancel {
+    font-size: 30px;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  #menu a {
+    display: block;
+    font-size: 1.5rem;
     text-decoration: none;
-    color: lightblue;
+    text-align: center;
+    margin: 20px 0;
+    color: #00aaff;
+  }
 }
-#holder a:hover{
-    text-decoration: underline;
-}
-#menu{
-    display: none;
-}
-#hamburg{
-    display: none;
-}
+
 
 
 @media only screen and (max-width: 768px) {
-    *{
-        margin: 0;
-        padding: 0;
-    }
+  body {
+    font-size: 16px;
+    padding: 0 10px;
+  }
 
-    /*General nav for both Laptop and phone*/
-    #nav{
-        box-shadow: 0 2Px grey;
-        display: block;
-        height: 8vh;
-    }
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
 
-    /*Removing Laptop nav view*/
-    #nav h1{
-        display: none;
-    }
-    #holder{
-        display: none;
-    }
+  #nav h1 {
+    display: none;
+  }
 
-    /*Styling mobile nav view*/
-    #hamburg{
-        display: block;
-        width: 12%;
-        height: 10vh;
-        margin-left: 3%;
-        margin-top: 3%;
-    }
-    #line{
-        height: 2vh;
-        width: 80%;
-        background: black;
-        border-radius: 12%;
-        margin-top: 3%;
-        margin-left: 10%;
-    }
+  #holder {
+    display: none;
+  }
 
-    /*Navigation bar which only activates when hamburg is clicked*/
-    #menu{
-        height: 100vh;
-        width: 100%;
-    }
-    #cancel{
-        font-size: 40px;
-        margin-left: 2%;
-        margin-top: 3%;
-    }
-    #menu a{
-        font-size: 30px;
-        text-decoration: none;
-        text-align: center;
-        margin: 0% 25%;
-        color: lightblue;
-    }
+  #hamburg {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  #line {
+    width: 100%;
+    height: 4px;
+    background: black;
+    margin: 6px 0;
+    border-radius: 2px;
+  }
+
+  #menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    padding: 20px;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  #menu a {
+    display: block;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #00aaff;
+  }
+
+  #cancel {
+    text-align: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #container{
+    display: block;
+    margin-top: 3%;
+    width: 100%;
+  }
+  #container img{
+    height: 60vh;
+    width: 90vw;
+    border-radius: 5%;
+    margin-left: 5%;
+  }
 }

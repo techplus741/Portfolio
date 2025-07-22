@@ -51,6 +51,9 @@ body {
 #hamburg {
   display: none;
 }
+#container2{
+  display: none;
+}
 
 /* Hero section */
 #container1 {
@@ -247,5 +250,84 @@ body {
     color: white;
     margin-top: 5%;
   animation: fadeSlide 4s ease-in-out;
+  }
+  #container2{
+    display: none;
+  }
+}
+
+
+/* Mobile Phones */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+
+  #container1 h1 {
+    font-size: 1.5rem;
+  }
+
+  #container1 h2 {
+    font-size: 1rem;
+  }
+
+  #btn {
+    font-size: 18px;
+    width: 80vw;
+    height: 8vh;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  #container1 h1 {
+    font-size: 1.8rem;
+  }
+
+  #container1 h2 {
+    font-size: 1.2rem;
+  }
+
+  #btn {
+    font-size: 20px;
+    width: 60vw;
+    height: 9vh;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1024px) {
+  #container1 {
+    display: block;
+    padding: 50px;
+  }
+
+  #container1 h1 {
+    font-size: 2.5rem;
+  }
+
+  #container1 h2 {
+    font-size: 1.3rem;
+  }
+
+  #btn {
+    font-size: 22px;
+    padding: 10px 30px;
+    width: auto;
+    height: auto;
+  }
+
+  #holder {
+    display: flex;
+  }
+
+  #hamburg {
+    display: none;
   }
 }

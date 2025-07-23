@@ -23,7 +23,7 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-#nav h1 {
+#nav #head {
   font-family: 'Brush Script MT', cursive;
   font-size: 2rem;
   flex: 1;
@@ -249,7 +249,7 @@ body {
     font-size: 25px;
     color: white;
     margin-top: 5%;
-  animation: fadeSlide 4s ease-in-out;
+  animation: fadeSlide 2.5s ease-in-out;
   }
   #container2{
     display: none;

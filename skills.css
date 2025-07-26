@@ -23,7 +23,7 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-#nav h1 {
+#nav #head {
   font-family: 'Brush Script MT', cursive;
   font-size: 2rem;
   flex: 1;
@@ -51,6 +51,12 @@ body {
 #hamburg {
   display: none;
 }
+#container1{
+  display: none;
+}
+#container1 h1{
+  font-family: 'Brush Script MT', cursive;
+}
 
 /* Mobile responsiveness */
 @media only screen and (max-width: 768px) {
@@ -73,6 +79,10 @@ body {
     height: 8vh;
     margin-left: 3%;
     margin-top: 3%;
+  }
+
+  #container1{
+    display: flex;
   }
 
   #line {

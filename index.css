@@ -304,7 +304,7 @@ body {
 /* Desktops */
 @media only screen and (min-width: 1024px) {
   #container1 {
-    display: block;
+    display: none;
     padding: 50px;
   }
 

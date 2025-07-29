@@ -51,6 +51,24 @@ body {
 #hamburg {
   display: none;
 }
+#header{
+  text-align: center;
+  color: #00aaff;
+}
+#project{
+  height: 70vh;
+  width: 80%;
+  border: 2px solid grey;
+  box-shadow: 0 2px 5px rgba(0.1, 0.1, 0.1, 0.1);
+  margin-left: 10%;
+  margin-top: 10%;
+  border-radius: 5%;
+}
+#project img{
+  height: 35vh;
+  width: 100%;
+  border-radius: 5%;
+}
 
 /* Mobile responsiveness */
 @media only screen and (max-width: 768px) {
